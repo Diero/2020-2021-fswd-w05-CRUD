@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reizen De Reisduif - Update Klanten</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/screen.css" />
+    <script src="../script/dataHandler.js"></script>
+    <script src="../script/klanten/update.js"></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="bg-white mh-100 p-5">
+        <h1 class="h1">Reizen De Reisduif - Klant updaten</h1>
+        <p>
+          <a href="../klanten" class="btn btn-primary mb-3">Back to Klanten</a>
+          <a href="insert.html" class="btn btn-secondary mb-3">Klant toevoegen</a>
+          <a href="update.html" class="btn btn-secondary mb-3">Klant updaten</a>
+          <a href="delete.html" class="btn btn-danger mb-3">Klant Verwijderen</a>
+        </p>
+        <div class="js-result"></div>
+        <div class="text-info">
+          Dit formulier vraagt - bij het laden -  de huidige gegevens op van klant 100, vult het formulier op met deze gegevens.<br>
+          Klikt de gebruiker op update, dan update je de gegevens van klant 100.
+        </div>
+        <form class="form">
+          <div class="form-group">
+            <label class="form-label" for="KlantID">KlantID</label>
+            <input class="form-control input js-klantid" type="number" name="KlantID" id="KlantID" value="1044" readonly />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="FNaam">Naam</label>
+            <input class="form-control input js-fnaam" type="text" name="FNaam" id="FNaam" value="Roobrouck" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="VNaam">Voornaam</label>
+            <input class="form-control input js-vnaam" type="text" name="VNaam" id="VNaam" value="Christophe" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Straat">Straat</label>
+            <input class="form-control input js-straat" type="text" name="Straat" id="Straat" value="Sint-Martens Latemlaan" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Nummer">Nummer</label>
+            <input class="form-control input js-nummer" type="text" name="Nummer" id="Nummer" value="2B" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Postcode">Postcode</label>
+            <input class="form-control input js-postcode" type="number" name="Postcode" id="Postcode" value="8500" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Gemeente">Gemeente</label>
+            <input class="form-control input js-gemeente" type="text" name="Gemeente" id="Gemeente" value="Kortrijk" />
+          </div>
+          <input class="btn btn-dark mt-3 js-update" type="button" value="Update" />
+        </form>
+      </div>
+    </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+  </body>
+</html>

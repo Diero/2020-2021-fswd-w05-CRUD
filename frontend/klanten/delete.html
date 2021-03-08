@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reizen De Reisduif - Update Klanten</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/screen.css" />
+    <script src="../script/dataHandler.js"></script>
+    <script src="../script/klanten/delete.js"></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="bg-white mh-100 p-5">
+        <h1 class="h1">Reizen De Reisduif - Klant verwijderen</h1>
+        <p>
+          <a href="../klanten" class="btn btn-primary mb-3">Back to Klanten</a>
+          <a href="insert.html" class="btn btn-secondary mb-3">Klant toevoegen</a>
+          <a href="update.html" class="btn btn-secondary mb-3">Klant updaten</a>
+          <a href="delete.html" class="btn btn-danger mb-3">Klant Verwijderen</a>
+        </p>
+        <div class="js-result"></div>
+        <form class="form">
+          <div class="form-group">
+            <label class="form-label" for="KlantID">KlantID</label>
+            <select class="form-control input js-klantid" name="KlantID" id="KlantID">
+              <option value="1044">Klant A</option>
+              <option value="1045">Klant B</option>
+              <option value="...">....</option>
+            </select>
+          </div>
+          <input class="btn btn-danger mt-3 js-delete" type="button" value="Verwijderen" />
+        </form>
+      </div>
+    </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+  </body>
+</html>
